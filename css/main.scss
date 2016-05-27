@@ -15,6 +15,36 @@ body {
 
 }
 
+.btn {
+  border-radius: 0;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.btn-primary {
+  color: white;
+  background-color: $primary-color;
+  border-color: darken($primary-color, 10%);
+
+  &:hover {
+    color: white;
+    background-color: darken($primary-color, 10%);
+    border-color: darken($primary-color, 20%);
+  }
+}
+
+.btn-primary-alt {
+  color: white;
+  background-color: $secondary-color;
+  border-color: darken($secondary-color, 10%);
+
+  &:hover {
+    color: white;
+    background-color: darken($secondary-color, 10%);
+    border-color: darken($secondary-color, 20%);
+  }
+}
+
 .navbar {
   background-color: white;
   border: 0;
@@ -31,7 +61,7 @@ footer {
   padding: 2em;
 }
 
-.index .carousel .item {
+.index.slides .item {
   background-color: $secondary-color;
   color: white;
   height: 300px;
@@ -46,4 +76,16 @@ footer {
       text-transform: lowercase;
     }
   }
+}
+
+.index.actions {
+  h2 {
+    color: $secondary-color;
+  }
+}
+
+.index.why {
+  background-color: $secondary-color;
+  color: white;
+  text-align: center;
 }
