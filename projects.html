@@ -2,13 +2,38 @@
 title: Projects
 ---
 
-<section class="build header">
-  <h1>
-    Find a project to help build
-    <br>
-    <small>
-      Copy about who we're looking for and how folks can pitch in
-      to make a meaningful difference for the child welfare system
-    </small>
-  </h1>
+<section class="projects">
+  <header>
+    <h1>
+      Find a project to help build
+      <br>
+      <small>
+        Copy about who we're looking for and how folks can pitch in
+        to make a meaningful difference for the child welfare system
+      </small>
+    </h1>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      {% for project in site.projects %}
+      <div class="col-md-4">
+        <div class="card">
+          <a href="{{ project.url }}">
+            <img src="{{ project.thumbnail_url }}" alt="{{ project.title }}">
+          </a>
+          <div class="details">
+            <h2>{{ project.title }}</h2>
+            <p class="short-description">{{ project.short_description }}</p>
+            <p class="skills-needed">
+              <span>Skills Needed:</span>
+              {{ project.skills_needed }}
+            </p>
+            <a href="{{ project.url }}" class="btn btn-primary-alt abs">Learn More</a>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
 </section>

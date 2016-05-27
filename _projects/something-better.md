@@ -1,5 +1,5 @@
 ---
-title: Something Better App
+title: The Something Better App
 short_description: This app will give users info about the places in our communities where our foster children live so that the policy makers can consider the fundamental question of whether the State is providing “Something Better” to the children it removes.
 skills_needed: GIS tech
 estimated_time:

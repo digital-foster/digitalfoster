@@ -1,5 +1,5 @@
 ---
-title: Know Before You Go App
+title: The Know Before You Go App
 short_description: Know Before You Go (B4UGO) is the best way for current and foster youth in Los Angeles County to stay connected to information, people and services designed for them.
 skills_needed: GIS tech, front and back end development, UI & UX design
 estimated_time: 40 hours

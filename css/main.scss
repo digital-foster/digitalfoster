@@ -10,6 +10,7 @@ $text-color: gray;
 $primary-color: #52958a;
 $secondary-color: #832d9c;
 $medium-gray: mediumgray;
+$light-gray: #F3F3F3;
 
 body {
   color: $text-color;
@@ -118,13 +119,54 @@ footer {
   }
 }
 
-.build.header,
-.library.header,
-.submit.header {
+.projects header,
+.products header,
+.submit header {
   text-align: center;
 
   h1 {
     color: $secondary-color;
+  }
+}
+
+.projects {
+  .container {
+    max-width: 950px;
+  }
+
+  .card {
+    background-color: $light-gray;
+    margin-top: 1em;
+
+    .details {
+      min-height: 340px;
+      padding: 2em;
+      padding-bottom: 70px;
+      position: relative;
+    }
+
+    a.btn {
+      position: absolute;
+      bottom: 2em;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    h2 {
+      color: $primary-color;
+      font-size: 16px;
+      line-height: 20px;
+      margin-top: 0;
+    }
+
+    .skills-needed span {
+      color: $primary-color;
+      font-size: 12px;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
   }
 }
 
