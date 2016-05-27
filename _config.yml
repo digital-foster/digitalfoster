@@ -14,6 +14,14 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://digitalfoster.org" # the base hostname & protocol for your site
 twitter_username: InnovFellows
 github_username: digital-foster
+repo: https://github.com/digital-foster/digitalfoster
 
 # Build settings
 markdown: kramdown
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - CONTRIBUTING.md
+  - LICENSE.md
+  - README.md
