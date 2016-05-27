@@ -3,13 +3,47 @@ layout: default
 ---
 
 <article class="project">
+  <div class="container">
 
-  <header>
-    <h1>{{ page.title }}</h1>
-  </header>
+    <div class="row">
+      <header>
 
-  <div>
-    {{ content }}
+        <div class="col-sm-8">
+          <h1>{{ page.title }}</h1>
+        </div>
+
+        <div class="col-sm-4">
+          <a href="#" class="btn btn-primary-alt btn-lg visible-xs-block visible-sm-inline-block visible-md-inline-block visible-lg-inline-block">I Want to Help!</a>
+        </div>
+
+      </header>
+    </div>
+
+    <div class="row">
+
+      <div class="col-sm-4 col-sm-push-8">
+        <dl>
+          <dt>Skills Needed</dt>
+          <dd>{{ page.skills_needed }}</dd>
+          <dt>Estimated Time</dt>
+          <dd>{{ page.estimated_time }}</dd>
+          <dt>Estimated Timeline</dt>
+          <dd>{{ page.estimated_timeline }}</dd>
+          <dt>Location</dt>
+          <dd>{{ page.location }}</dd>
+          <dt>Remote OK</dt>
+          <dd>{{ page.remote_ok }}</dd>
+          <dt>Contact</dt>
+          <dd>{{ page.contact }}</dd>
+        </dl>
+        <img src="{{ page.partner_logo_url }}" alt="{{ title }} Logo" class="partner-logo">
+      </div>
+
+      <div class="col-sm-8 col-sm-pull-4">
+        {{ content }}
+        <a href="#" class="btn btn-primary-alt btn-lg visible-xs-block">I Want to Help!</a>
+      </div>
+
+    </div>
   </div>
-
 </article>
