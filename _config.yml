@@ -25,3 +25,23 @@ exclude:
   - CONTRIBUTING.md
   - LICENSE.md
   - README.md
+
+collections:
+  products:
+    output: true
+    permalink: /products/:path/
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: products
+    values:
+      layout: product
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
