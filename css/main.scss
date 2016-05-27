@@ -99,7 +99,6 @@ footer {
 .index.slides .item {
   background-color: $secondary-color;
   color: white;
-  height: 300px;
   text-align: center;
 
   h1 {
@@ -121,6 +120,9 @@ footer {
 
 .index.why {
   background-color: $secondary-color;
+  background-image: url('/img/HomepageFooterImage.jpg');
+  background-position: center center;
+  background-size: cover;
   color: white;
   text-align: center;
 }
