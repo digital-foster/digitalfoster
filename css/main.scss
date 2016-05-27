@@ -11,8 +11,8 @@ $primary-color: #52958a;
 $secondary-color: #832d9c;
 
 
-body {
-
+h1 {
+  color: $primary-color;
 }
 
 .btn {
@@ -88,4 +88,27 @@ footer {
   background-color: $secondary-color;
   color: white;
   text-align: center;
+}
+
+.mission.statement {
+  background-color: $secondary-color;
+  color: white;
+
+  h1 {
+    color: $primary-color;
+    text-transform: uppercase;
+
+    small {
+      color: white;
+      text-transform: none;
+    }
+  }
+}
+
+.mission.problem .stats {
+  text-transform: uppercase;
+
+  h2 {
+    color: $secondary-color;
+  }
 }
