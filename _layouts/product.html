@@ -15,7 +15,7 @@ layout: default
         {{ content }}
         <hr>
         <h2>Reviews</h2>
-        {% for i in (1..product.rating) %}
+        {% for i in (1..page.rating) %}
         <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
         {% endfor %}
         <span class="sr-only">Rating: {{ page.rating }}</span>

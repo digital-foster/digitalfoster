@@ -64,7 +64,6 @@ h1 {
 footer {
   background-color: $primary-color;
   color: white;
-  margin-top: 2em;
   padding: 2em;
 }
 
@@ -178,6 +177,13 @@ footer {
 .products header,
 .submit header {
   border-top: 10px #EDEDED solid;
+}
+
+.product,
+.project,
+.projects,
+.products {
+  padding-bottom: 2em;
 }
 
 .products,
