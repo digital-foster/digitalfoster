@@ -104,17 +104,10 @@ footer {
 
 .index.slides .item {
   background-color: $secondary-color;
-  color: white;
   text-align: center;
 
-  h1 {
-    color: $primary-color;
-    text-transform: uppercase;
-
-    small {
-      color: white;
-      text-transform: lowercase;
-    }
+  img {
+    width: 100%;
   }
 }
 
