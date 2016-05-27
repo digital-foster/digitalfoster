@@ -10,7 +10,6 @@ $text-color: #111111;
 $primary-color: #52958a;
 $secondary-color: #832d9c;
 
-
 h1 {
   color: $primary-color;
 }
@@ -109,6 +108,14 @@ footer {
   text-transform: uppercase;
 
   h2 {
+    color: $secondary-color;
+  }
+}
+
+.submit {
+  text-align: center;
+
+  h1 {
     color: $secondary-color;
   }
 }
