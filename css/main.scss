@@ -53,18 +53,12 @@ h1 {
 .navbar {
   background-color: white;
   border: 0;
-  font-size: 16px;
-  font-weight: 500;
   margin-bottom: 0;
-  text-transform: uppercase;
 }
 
 .navbar-brand {
   background-color: $primary-color !important;
   color: white !important;
-  font-size: 28px;
-  font-style: italic;
-  text-transform: uppercase;
 }
 
 footer {
@@ -129,7 +123,6 @@ footer {
 .projects header,
 .products header,
 .submit header {
-  border-top: 10px #EDEDED solid;
   padding: 3em;
   text-align: center;
 
@@ -139,6 +132,7 @@ footer {
     font-weight: 300;
     line-height: 1em;
     margin: .5em auto;
+    max-width: 800px;
   }
 
   p {
@@ -149,6 +143,15 @@ footer {
   }
 }
 
+.product,
+.project,
+.projects header,
+.products header,
+.submit header {
+  border-top: 10px #EDEDED solid;
+}
+
+.products,
 .projects {
   .container {
     max-width: 950px;
@@ -159,7 +162,8 @@ footer {
     margin-top: 2em;
 
     .details {
-      min-height: 340px;
+      font-size: 16px;
+      min-height: 375px;
       padding: 2em;
       padding-bottom: 70px;
       position: relative;
@@ -177,6 +181,7 @@ footer {
     h2 {
       color: $primary-color;
       font-size: 16px;
+      font-weight: 600;
       line-height: 20px;
       margin-top: 0;
     }
@@ -190,7 +195,33 @@ footer {
   }
 }
 
+.products .card .details {
+  min-height: 250px;
+}
+
+.product {
+  padding-top: 2em;
+
+  img {
+    max-width: 100%;
+  }
+
+  h1 {
+    color: $secondary-color;
+    font-size: 48px;
+    font-weight: 300;
+  }
+
+  h2 {
+    color: $primary-color;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+}
+
 .project {
+  padding-top: 1em;
+
   header .btn {
     margin-top: 1em;
     font-size: 28px;

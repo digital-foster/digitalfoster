@@ -4,8 +4,34 @@ title: Products
 
 <section class="products">
   <header>
-    <h1>
-      Find innovative products for youth, families, and service providers
-    </h1>
+    <h1>Find innovative products for youth, families, and service providers.</h1>
   </header>
+
+  <div class="container">
+    <div class="row">
+      {% for product in site.products %}
+      <div class="col-md-4">
+        <div class="card">
+          <a href="{{ product.url }}">
+            <img src="{{ product.thumbnail_url }}" alt="{{ product.title }}">
+          </a>
+          <div class="details">
+            <h2>{{ product.title }}</h2>
+            <p class="short-description">{{ product.short_description }}</p>
+            <div class="rating">
+              {% for i in (1..product.rating) %}
+              <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+              {% endfor %}
+              <span class="sr-only">Rating: {{ product.rating }}</span>
+            </div>
+            <a href="{{ product.url }}" class="btn btn-primary-alt">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <!-- ugly hack: the number of entries in this cycle must match
+           the number of columns in this grid row -->
+      {% cycle '', '', '</div><div class="row">' %}
+      {% endfor %}
+    </div>
+  </div>
 </section>
