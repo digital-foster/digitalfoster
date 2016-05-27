@@ -122,10 +122,23 @@ footer {
 .projects header,
 .products header,
 .submit header {
+  border-top: 10px #EDEDED solid;
+  padding: 3em;
   text-align: center;
 
   h1 {
     color: $secondary-color;
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 1em;
+    margin: .5em auto;
+  }
+
+  p {
+    font-size: 24px;
+    font-weight: 300;
+    max-width: 640px;
+    margin: 0 auto;
   }
 }
 
@@ -171,9 +184,6 @@ footer {
 }
 
 .project {
-  border-top: 5px #EDEDED solid;
-  padding-top: 1em;
-
   header .btn {
     margin-top: 1em;
     font-size: 28px;
