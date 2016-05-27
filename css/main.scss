@@ -30,3 +30,20 @@ footer {
   color: white;
   padding: 2em;
 }
+
+.index .carousel .item {
+  background-color: $secondary-color;
+  color: white;
+  height: 300px;
+  text-align: center;
+
+  h1 {
+    color: $primary-color;
+    text-transform: uppercase;
+
+    small {
+      color: white;
+      text-transform: lowercase;
+    }
+  }
+}
