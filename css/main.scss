@@ -53,12 +53,18 @@ h1 {
 .navbar {
   background-color: white;
   border: 0;
+  font-size: 16px;
+  font-weight: 500;
   margin-bottom: 0;
+  text-transform: uppercase;
 }
 
 .navbar-brand {
   background-color: $primary-color !important;
   color: white !important;
+  font-size: 22px;
+  font-style: italic;
+  text-transform: uppercase;
 }
 
 footer {
