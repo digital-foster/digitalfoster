@@ -26,6 +26,8 @@ exclude:
   - LICENSE.md
   - README.md
 
+permalink: /:path/
+
 collections:
   products:
     output: true
@@ -35,6 +37,10 @@ collections:
     permalink: /projects/:path/
 
 defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
   - scope:
       path: ""
       type: products
