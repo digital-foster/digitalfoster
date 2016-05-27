@@ -33,6 +33,9 @@ title: Projects
           </div>
         </div>
       </div>
+      <!-- ugly hack: the number of entries in this cycle must match
+           the number of columns in this grid row -->
+      {% cycle '', '', '</div><div class="row">' %}
       {% endfor %}
     </div>
   </div>
