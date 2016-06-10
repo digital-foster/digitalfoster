@@ -6,6 +6,18 @@
   <title>{% if page.title %}{{ page.title | escape }} | {{ site.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
+  <script>
+    // yes, this is a hack -- no, it's not secure
+    if (window.location.hostname !== '0.0.0.0') {
+      var password = prompt('This website is not live yet.' +
+                            '\n\nPlease enter password to continue.');
+      if (password !== 'welfare') {
+        alert('Unauthorized');
+        window.location = 'https://presidentialinnovationfellows.gov/';
+      }
+    }
+  </script>
+
   <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 
   <!-- Latest compiled and minified CSS -->
